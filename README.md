@@ -7,7 +7,7 @@
 - 쉘: zsh
 - 터미널: Apple_Terminal
 - Docker 버전:
-- Git 버전:
+- Git 버전: 2.53.0
 
 ## 수행 항목 체크리스트
 - [o] 터미널 조작 로그 기록
