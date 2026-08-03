@@ -1,18 +1,21 @@
 # 내 컴퓨터에 개발자용 '작업실' 꾸미기
 
+
 ## 미션 요약
+
 
 ## 실행 환경
 - OS: macOS 15.7.4
 - 쉘: zsh
 - 터미널: Apple_Terminal
-- Docker 버전:
+- Docker 버전: 28.5.2
 - Git 버전: 2.53.0
+
 
 ## 수행 항목 체크리스트
 - [o] 터미널 조작 로그 기록
 - [o] 권한 실습 및 증거 기록
-- [] Docker 설치 및 기본 점검
+- [o] Docker 설치 및 기본 점검
 - [] Docker 기본 운영 명령 수행
 - [] 컨테이너 실행 실습
 - [] 기존 Dockerfile 기반 커스텀 이미지 제작
@@ -20,6 +23,7 @@
 - [] Docker 볼륨 영속성 검증
 - [] Git 설정 및 Github 연동
 - [] 보안 및 개인정보 보호
+
 
 ## 터미널 조작 로그 기록
 ```zsh
@@ -72,6 +76,7 @@ cat 파일명
 ```
 ![cat](./images/1-1/cat.png)
 
+
 ## 권한 실습 및 증거 기록
 ### 초기 터미널 파일, 폴더 목록  
 ![init](./images/1-2/init.png)
@@ -93,3 +98,17 @@ chmod 숫자 파일/폴더
 ![file](./images/1-2/file.png)
 ### 폴더  
 ![folder](./images/1-2/folder.png)
+
+
+## Docker 설치 및 기본 점검
+
+```zsh
+# Docker 버전 확인
+docker --version
+```
+![version](./images/1-3/version.png)
+```zsh
+# Docker 데몬 동작 여부 확인
+docker info
+```
+![info](./images/1-3/info.png)
