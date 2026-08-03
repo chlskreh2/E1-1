@@ -91,5 +91,7 @@ chmod 숫자 파일/폴더
 # 쓰기(w)   = 폴더 안에 파일을 만들거나 삭제할 수 있다
 # 실행(x)   = 폴더 안으로 진입할 수 있다 (cd 명령어)
 ```
+### 파일
 ![file](./images/1-2/file.png)
+### 폴더
 ![folder](./images/1-2/folder.png)
