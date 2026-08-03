@@ -73,7 +73,9 @@ cat 파일명
 ![cat](./images/1-1/cat.png)
 
 ## 권한 실습 및 증거 기록
+```zsh
 초기 터미널 파일, 폴더 목록
+```
 ![init](./images/1-2/init.png)
 ```zsh
 # 권한 변경
