@@ -16,7 +16,7 @@
 - [o] 터미널 조작 로그 기록
 - [o] 권한 실습 및 증거 기록
 - [o] Docker 설치 및 기본 점검
-- [] Docker 기본 운영 명령 수행
+- [o] Docker 기본 운영 명령 수행
 - [] 컨테이너 실행 실습
 - [] 기존 Dockerfile 기반 커스텀 이미지 제작
 - [] 포트 매핑 및 접속 증거
@@ -112,3 +112,32 @@ docker --version
 docker info
 ```
 ![info](./images/1-3/info.png)
+
+
+## Docker 기본 운영 명령 수행
+```zsh
+# Docker 이미지 다운로드
+docker pull 다운받을이미지
+# Docker 이미지 목록 확인
+docker images
+```
+![pull](./images/1-4/pull_images.png)
+```zsh
+# Docker 컨테이너 실행
+docker run 실행할이미지
+# Docker 실행 중인 컨테이너 목록 확인
+docker ps
+# Docker 모든 컨테이너 확인 (중지된 것 포함)
+docker ps -a
+```
+![run](./images/1-4/run.png)
+![ps](./images/1-4/ps_ps-a.png)
+```zsh
+# Docker 컨테이너 로그 확인
+docker logs <컨테이너ID | 컨테이너이름>
+# Docker 실행 중인 컨테이너 리소스 확인
+docker stats <컨테이너ID | 컨테이너이름>
+```
+![logs](./images/1-4/logs.png)
+![stats](./images/1-4/stats.png)
+
