@@ -1,10 +1,10 @@
 # 내 컴퓨터에 개발자용 '작업실' 꾸미기
 
 
-## 미션 요약
+# 미션 요약
 
 
-## 실행 환경
+# 실행 환경
 - OS: macOS 15.7.4
 - 쉘: zsh
 - 터미널: Apple_Terminal
@@ -12,12 +12,12 @@
 - Git 버전: 2.53.0
 
 
-## 수행 항목 체크리스트
+# 수행 항목 체크리스트
 - [o] 터미널 조작 로그 기록
 - [o] 권한 실습 및 증거 기록
 - [o] Docker 설치 및 기본 점검
 - [o] Docker 기본 운영 명령 수행
-- [] 컨테이너 실행 실습
+- [o] 컨테이너 실행 실습
 - [] 기존 Dockerfile 기반 커스텀 이미지 제작
 - [] 포트 매핑 및 접속 증거
 - [] Docker 볼륨 영속성 검증
@@ -25,7 +25,7 @@
 - [] 보안 및 개인정보 보호
 
 
-## 터미널 조작 로그 기록
+# 터미널 조작 로그 기록
 ```zsh
 # 현재 위치 확인
 pwd
@@ -77,8 +77,8 @@ cat 파일명
 ![cat](./images/1-1/cat.png)
 
 
-## 권한 실습 및 증거 기록
-### 초기 터미널 파일, 폴더 목록  
+# 권한 실습 및 증거 기록
+## 초기 터미널 파일, 폴더 목록  
 ![init](./images/1-2/init.png)
 ```zsh
 # 권한 변경
@@ -94,13 +94,13 @@ chmod 숫자 파일/폴더
 # 쓰기(w)   = 폴더 안에 파일을 만들거나 삭제할 수 있다
 # 실행(x)   = 폴더 안으로 진입할 수 있다 (cd 명령어)
 ```
-### 파일  
+## 파일  
 ![file](./images/1-2/file.png)
-### 폴더  
+## 폴더  
 ![folder](./images/1-2/folder.png)
 
 
-## Docker 설치 및 기본 점검
+# Docker 설치 및 기본 점검
 
 ```zsh
 # Docker 버전 확인
@@ -130,7 +130,9 @@ docker ps
 # Docker 모든 컨테이너 확인 (중지된 것 포함)
 docker ps -a
 ```
+## Docker 컨테이너 실행
 ![run](./images/1-4/run.png)
+## Docker 실행 중인 컨테이너 목록 확인 | Docker 모든 컨테이너 확인 (중지된 것 포함)
 ![ps](./images/1-4/ps_ps-a.png)
 ```zsh
 # Docker 컨테이너 로그 확인
@@ -138,6 +140,22 @@ docker logs <컨테이너ID | 컨테이너이름>
 # Docker 실행 중인 컨테이너 리소스 확인
 docker stats <컨테이너ID | 컨테이너이름>
 ```
+## Docker 컨테이너 로그 확인
 ![logs](./images/1-4/logs.png)
+## Docker 실행 중인 컨테이너 리소스 확인
 ![stats](./images/1-4/stats.png)
+
+
+# 컨테이너 실행 실습
+```zsh
+# Ubuntu 컨테이너 실행 및 내부 진입 (대화형 모드)
+docker run -it ubuntu /bin/bash
+```
+![run_ubuntu](./images/1-5/run_ubuntu.png)
+## 컨테이너 내부 명령 실행 결과
+![ls](./images/1-5/ubuntu_ls.png)
+![echo](./images/1-5/ubuntu_echo.png)
+![pwd](./images/1-5/ubuntu_pwd.png)
+
+
 
